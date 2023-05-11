@@ -1,1 +1,1 @@
-[{"name":"test","path":"api/tags/test.json","slug":"test","count":3}]
+[{"name":"template","path":"api/tags/template.json","slug":"template","count":1},{"name":"ReentrantLock","path":"api/tags/ReentrantLock.json","slug":"ReentrantLock","count":1},{"name":"resume","path":"api/tags/resume.json","slug":"resume","count":1}]
