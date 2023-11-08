@@ -4,9 +4,34 @@
   
   
   <entry>
+    <title>fluid主题配置</title>
+    <link href="/2023/11/09/fluid%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/"/>
+    <url>/2023/11/09/fluid%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/</url>
+    
+    <content type="html"><![CDATA[<p>个人博客搭建心得 使用<code>hexo + fluid</code>主题</p><div class="note note-success">            <p>本文主要介绍了个人博客搭建的心得，使用<code>hexo + fluid</code>主题，以及一些常用的插件。</p>          </div>]]></content>
+    
+    
+    <categories>
+      
+      <category>个人博客</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>hexo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>hello-world</title>
-    <link href="/2023/11/08/hello-world/"/>
-    <url>/2023/11/08/hello-world/</url>
+    <link href="/2023/11/09/hello-world/"/>
+    <url>/2023/11/09/hello-world/</url>
     
     <content type="html"><![CDATA[<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><code class="hljs stylus">---------------- dest 列表 -----------------<br><span class="hljs-number">1</span>) learn<span class="hljs-selector-class">.microsoft</span><span class="hljs-selector-class">.com</span><br><span class="hljs-number">2</span>) www<span class="hljs-selector-class">.apple</span><span class="hljs-selector-class">.com</span><br><span class="hljs-number">3</span>) music<span class="hljs-selector-class">.apple</span><span class="hljs-selector-class">.com</span><br><span class="hljs-number">4</span>) www<span class="hljs-selector-class">.fandom</span><span class="hljs-selector-class">.com</span><br><span class="hljs-number">5</span>) www<span class="hljs-selector-class">.lovelive-anime</span><span class="hljs-selector-class">.jp</span><br><span class="hljs-number">6</span>) tidal<span class="hljs-selector-class">.com</span><br><span class="hljs-number">7</span>) zoro<span class="hljs-selector-class">.to</span><br><span class="hljs-number">8</span>) www<span class="hljs-selector-class">.pixiv</span><span class="hljs-selector-class">.co</span><span class="hljs-selector-class">.jp</span><br><span class="hljs-number">9</span>) mxj<span class="hljs-selector-class">.myanimelist</span><span class="hljs-selector-class">.net</span><br><span class="hljs-number">10</span>) mora<span class="hljs-selector-class">.jp</span><br><span class="hljs-number">11</span>) www<span class="hljs-selector-class">.j-wave</span><span class="hljs-selector-class">.co</span><span class="hljs-selector-class">.jp</span><br><span class="hljs-number">12</span>) www<span class="hljs-selector-class">.dmm</span><span class="hljs-selector-class">.com</span><br><span class="hljs-number">13</span>) booth<span class="hljs-selector-class">.pm</span><br><span class="hljs-number">14</span>) www<span class="hljs-selector-class">.ivi</span><span class="hljs-selector-class">.tv</span><br><span class="hljs-number">15</span>) fmovies.to/home<br><span class="hljs-number">16</span>) www<span class="hljs-selector-class">.leercapitulo</span><span class="hljs-selector-class">.com</span><br><span class="hljs-number">17</span>) www<span class="hljs-selector-class">.sky</span><span class="hljs-selector-class">.it</span><br><span class="hljs-number">18</span>) www<span class="hljs-selector-class">.sky</span><span class="hljs-selector-class">.com</span><br><span class="hljs-number">19</span>) www<span class="hljs-selector-class">.smdyy</span><span class="hljs-selector-class">.cc</span><br><span class="hljs-number">20</span>) www<span class="hljs-selector-class">.telecinco</span><span class="hljs-selector-class">.es</span><br>请选择你的 dest, 当前默认使用 <span class="hljs-string">&quot;learn.microsoft.com&quot;</span>, 自填选 <span class="hljs-number">0</span>:<br></code></pre></td></tr></table></figure><p><code>单行注释</code></p><blockquote><p>REALITY 使用其它端口貌似也具有相同伪装性（不打保证），对于自己服务器上已经有站点的，也不用为了共存另外设置反向代理或分流之类的。</p></blockquote><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs routeros">[信息] 已重启 xray 服务<br>--------------<span class="hljs-built_in"> client config </span>--------------<span class="hljs-built_in"></span><br><span class="hljs-built_in">address </span>    : <span class="hljs-string">&quot;45.32.50.85&quot;</span><span class="hljs-built_in"></span><br><span class="hljs-built_in">port </span>       : 443<br>protocol    : <span class="hljs-string">&quot;vless&quot;</span><br>id          : <span class="hljs-string">&quot;422939fd-f699-4a26-a6d7-61e17ee3dd88&quot;</span><br>flow        : <span class="hljs-string">&quot;xtls-rprx-vision&quot;</span><span class="hljs-built_in"></span><br><span class="hljs-built_in">network </span>    : <span class="hljs-string">&quot;tcp&quot;</span><br>TLS         : <span class="hljs-string">&quot;reality&quot;</span><br>SNI         : <span class="hljs-string">&quot;lovelive-anime.jp&quot;</span>,<span class="hljs-string">&quot;www.lovelive-anime.jp&quot;</span><br>Fingerprint : <span class="hljs-string">&quot;chrome&quot;</span><br>PublicKey   : <span class="hljs-string">&quot;LRrsQXaa2O2LWICHuZ9rY3vq9mC7m2iHxjLEikS3xBA&quot;</span><br>ShortId     : <span class="hljs-string">&quot;&quot;</span>,<span class="hljs-string">&quot;6d&quot;</span>,<span class="hljs-string">&quot;85dd&quot;</span>,<span class="hljs-string">&quot;e04cccd5&quot;</span>,<span class="hljs-string">&quot;5042dcec226b1621&quot;</span><br>SpiderX     : <span class="hljs-string">&quot;/&quot;</span><br>------------------------------------------<br>是否生成分享链接[y/n]:<br></code></pre></td></tr></table></figure><!-- 块引用 --><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css">iptables -<span class="hljs-selector-tag">I</span> <span class="hljs-selector-tag">INPUT</span> -<span class="hljs-selector-tag">p</span> tcp <span class="hljs-attr">--dport</span> <span class="hljs-number">443</span> -j ACCEPT<br></code></pre></td></tr></table></figure><p>以后要进入这个管理脚本界面输入 <code>bash Xray-script.sh</code> 这个<strong>命令</strong>就可以进入了，<em>现在</em>别管<strong>dsd</strong>。</p><div class="note note-success">            <p>这是一段 success 效果测试代码</p>          </div><div class="note note-info">            <p>这是一段 info 效果测试代码</p>          </div><div class="note note-warning">            <p>这是一段 warning 效果测试代码</p>          </div><div class="note note-danger">            <p>这是一段 danger 效果测试代码</p>          </div><div class="note note-primary">            <p>这是一段 primary 效果测试代码</p>          </div><p><img src="https://i0.wp.com/www.additudemag.com/wp-content/uploads/2016/11/78_8_Diagnose_Kids_Autism-Misdiagnosis_Slideshow_78_girl-father-playroom_ts_83480810.jpg"></p><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New    Post   &quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
@@ -29,23 +54,23 @@
   
   
   <entry>
-    <title>fluid主题配置</title>
-    <link href="/2020/12/01/fluid%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/"/>
-    <url>/2020/12/01/fluid%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/</url>
+    <title>python学习</title>
+    <link href="/2023/11/09/python%E5%AD%A6%E4%B9%A0/"/>
+    <url>/2023/11/09/python%E5%AD%A6%E4%B9%A0/</url>
     
-    <content type="html"><![CDATA[<p>个人博客搭建心得 使用<code>hexo + fluid</code>主题</p><div class="note note-success">            <p>本文主要介绍了个人博客搭建的心得，使用<code>hexo + fluid</code>主题，以及一些常用的插件。</p>          </div>]]></content>
+    <content type="html"><![CDATA[<h1 id="Python-学习"><a href="#Python-学习" class="headerlink" title="Python 学习"></a>Python 学习</h1><h2 id="1-Python-简介"><a href="#1-Python-简介" class="headerlink" title="1. Python 简介"></a>1. Python 简介</h2><p>Python 是一种解释型、面向对象、动态数据类型的高级程序设计语言。Python 由 Guido van Rossum 于 1989 年底发明，第一个公开发行版发行于 1991 年。Python 语法简洁清晰，特色之一是强制用空白符(white space)作为语句缩进。</p><p>Python 具有丰富和强大的库。它常被昵称为胶水语言，它能够把用其他语言制作的各种模块（尤其是 C&#x2F;C++）很轻松地联结在一起。常见的一种应用情形是，使用 Python 快速生成程序的原型（有时甚至是程序的最终界面），然后对其中<a href="https://zh.wikipedia.org/wiki/%E7%89%B9%E5%88%A5%E9%AB%94%E7%B3%BB">有特别要求的部分</a>，用更合适的语言改写，比如<a href="https://zh.wikipedia.org/wiki/CPython">3D 游戏中的图形渲染模块，CPython</a>就是这样产生的。</p><p>Python 解释器本身几乎可以在所有的操作系统中运行。Python 的官方解释器 CPython 是用 C 语言编写的、是一个<a href="https://zh.wikipedia.org/wiki/%E9%96%8B%E6%BA%90%E8%BB%9F%E9%AB%94">开源软件</a>，目前由<a href="https://zh.wikipedia.org/wiki/Python%E8%BB%9F%E4%BB%B6%E5%9F%BA%E9%87%91%E6%9C%83">Python 软件基金会</a>管理。它是一个<a href="https://zh.wikipedia.org/wiki/%E7%A4%BE%E7%BE%A4%E9%A9%85%E5%8B%95">社群驱动</a>的<a href="https://zh.wikipedia.org/wiki/%E8%87%AA%E7%94%B1%E8%BB%9F%E9%AB%94">自由软件</a>，源代码和<a href="https://zh.wikipedia.org/wiki/%E8%A7%A3%E9%87%8A%E5%99%A8">解释器实现</a>遵循<a href="https://zh.wikipedia.org/wiki/GNU%E9%80%A3%E7%8E%AF%E5%85%AC%E5%85%B1%E8%A8%B1%E5%8F%AF%E8%AD%89">GPL</a>（GNU General Public License）或<a href="https://zh.wikipedia.org/wiki/Python%E8%BB%9F%E4%BB%B6%E5%9F%BA%E9%87%91%E6%9C%83%E8%A8%B1%E5%8F%AF%E5%8D%94%E8%AD%B0%E6%9D%A1%E7%B4%84">Python 软件基金会许可协议</a>（Python Software Foundation License）。</p>]]></content>
     
     
     <categories>
       
-      <category>个人博客</category>
+      <category>编程语言</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>hexo</tag>
+      <tag>python</tag>
       
     </tags>
     
