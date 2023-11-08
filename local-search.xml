@@ -4,31 +4,6 @@
   
   
   <entry>
-    <title>fluid主题配置</title>
-    <link href="/2023/11/08/fluid%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/"/>
-    <url>/2023/11/08/fluid%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/</url>
-    
-    <content type="html"><![CDATA[<p>个人博客搭建心得 使用<code>hexo + fluid</code>主题</p><div class="note note-success">            <p>本文主要介绍了个人博客搭建的心得，使用<code>hexo + fluid</code>主题，以及一些常用的插件。</p>          </div>]]></content>
-    
-    
-    <categories>
-      
-      <category>个人博客</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>hexo</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>hello-world</title>
     <link href="/2023/11/08/hello-world/"/>
     <url>/2023/11/08/hello-world/</url>
@@ -46,6 +21,31 @@
     <tags>
       
       <tag>hello-world</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>fluid主题配置</title>
+    <link href="/2020/12/01/fluid%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/"/>
+    <url>/2020/12/01/fluid%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/</url>
+    
+    <content type="html"><![CDATA[<p>个人博客搭建心得 使用<code>hexo + fluid</code>主题</p><div class="note note-success">            <p>本文主要介绍了个人博客搭建的心得，使用<code>hexo + fluid</code>主题，以及一些常用的插件。</p>          </div>]]></content>
+    
+    
+    <categories>
+      
+      <category>个人博客</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>hexo</tag>
       
     </tags>
     
