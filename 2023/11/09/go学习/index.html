@@ -10,16 +10,16 @@
 <meta content="#2f4154" name="theme-color"/>
 <meta content="Nichuanfang" name="author"/>
 <meta content="" name="keywords"/>
-<meta content="go 学习技巧1. 语言特性go 的优点:  语法简单 编译快 并发编程 内存管理  2. 语法2.1. 基本语法2.1.1. 变量123456789101112131415// 声明变量var a intvar b stringvar c boolvar d float32var e float64var f bytevar g runevar h complex64var i complex" name="description"/>
+<meta content="go 学习技巧1. 语言特性go 的优点:  语法简单 编译快 并发编程 内存管理   2. 语法2.1. 基本语法2.1.1. 变量123456789101112131415// 声明变量var a intvar b stringvar c boolvar d float32var e float64var f bytevar g runevar h complex64var i comple" name="description"/>
 <meta content="article" property="og:type"/>
 <meta content="go学习" property="og:title"/>
 <meta content="https://blog.jaychou.site/2023/11/09/go%E5%AD%A6%E4%B9%A0/index.html" property="og:url"/>
 <meta content="个人博客" property="og:site_name"/>
-<meta content="go 学习技巧1. 语言特性go 的优点:  语法简单 编译快 并发编程 内存管理  2. 语法2.1. 基本语法2.1.1. 变量123456789101112131415// 声明变量var a intvar b stringvar c boolvar d float32var e float64var f bytevar g runevar h complex64var i complex" property="og:description"/>
+<meta content="go 学习技巧1. 语言特性go 的优点:  语法简单 编译快 并发编程 内存管理   2. 语法2.1. 基本语法2.1.1. 变量123456789101112131415// 声明变量var a intvar b stringvar c boolvar d float32var e float64var f bytevar g runevar h complex64var i comple" property="og:description"/>
 <meta content="zh_CN" property="og:locale"/>
 <meta content="https://blog.jaychou.site/img/post/go%E5%AD%A6%E4%B9%A0/index.webp" property="og:image"/>
 <meta content="2023-11-09T08:04:17.000Z" property="article:published_time"/>
-<meta content="2023-11-09T08:38:34.000Z" property="article:modified_time"/>
+<meta content="2023-11-09T08:43:44.000Z" property="article:modified_time"/>
 <meta content="Nichuanfang" property="article:author"/>
 <meta content="go" property="article:tag"/>
 <meta content="summary_large_image" name="twitter:card"/>
@@ -165,6 +165,7 @@
 <li>并发编程</li>
 <li>内存管理</li>
 </ul>
+<p><img alt="测试图片2" lazyload="" src="/img/post/go%E5%AD%A6%E4%B9%A0test1.webp" srcset="/img/loading.gif"/></p>
 <h2 id="2-语法"><a class="headerlink" href="#2-语法" title="2. 语法"></a>2. 语法</h2><h3 id="2-1-基本语法"><a class="headerlink" href="#2-1-基本语法" title="2.1. 基本语法"></a>2.1. 基本语法</h3><h4 id="2-1-1-变量"><a class="headerlink" href="#2-1-1-变量" title="2.1.1. 变量"></a>2.1.1. 变量</h4><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br/><span class="line">2</span><br/><span class="line">3</span><br/><span class="line">4</span><br/><span class="line">5</span><br/><span class="line">6</span><br/><span class="line">7</span><br/><span class="line">8</span><br/><span class="line">9</span><br/><span class="line">10</span><br/><span class="line">11</span><br/><span class="line">12</span><br/><span class="line">13</span><br/><span class="line">14</span><br/><span class="line">15</span><br/></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-comment">// 声明变量</span><br/><span class="hljs-keyword">var</span> a <span class="hljs-type">int</span><br/><span class="hljs-keyword">var</span> b <span class="hljs-type">string</span><br/><span class="hljs-keyword">var</span> c <span class="hljs-type">bool</span><br/><span class="hljs-keyword">var</span> d <span class="hljs-type">float32</span><br/><span class="hljs-keyword">var</span> e <span class="hljs-type">float64</span><br/><span class="hljs-keyword">var</span> f <span class="hljs-type">byte</span><br/><span class="hljs-keyword">var</span> g <span class="hljs-type">rune</span><br/><span class="hljs-keyword">var</span> h <span class="hljs-type">complex64</span><br/><span class="hljs-keyword">var</span> i <span class="hljs-type">complex128</span><br/><span class="hljs-keyword">var</span> j []<span class="hljs-type">int</span><br/><span class="hljs-keyword">var</span> k [<span class="hljs-number">10</span>]<span class="hljs-type">int</span><br/><span class="hljs-keyword">var</span> l <span class="hljs-keyword">map</span>[<span class="hljs-type">string</span>]<span class="hljs-type">int</span><br/><span class="hljs-keyword">var</span> m <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(a <span class="hljs-type">int</span>)</span></span> <span class="hljs-type">int</span><br/><span class="hljs-keyword">var</span> n *<span class="hljs-type">int</span><br/></code></pre></td></tr></table></figure>
 <h4 id="2-1-2-常量"><a class="headerlink" href="#2-1-2-常量" title="2.1.2. 常量"></a>2.1.2. 常量</h4><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br/><span class="line">2</span><br/><span class="line">3</span><br/><span class="line">4</span><br/></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-comment">// 声明常量</span><br/><span class="hljs-keyword">const</span> a <span class="hljs-type">int</span> = <span class="hljs-number">10</span><br/><span class="hljs-keyword">const</span> b <span class="hljs-type">string</span> = <span class="hljs-string">"hello"</span><br/><span class="hljs-keyword">const</span> c <span class="hljs-type">bool</span> = <span class="hljs-literal">true</span><br/></code></pre></td></tr></table></figure>
 </div>
