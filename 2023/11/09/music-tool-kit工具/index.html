@@ -19,7 +19,7 @@
 <meta content="zh_CN" property="og:locale"/>
 <meta content="https://blog.jaychou.site/img/post/music-tool-kit%E5%B7%A5%E5%85%B7/index.webp" property="og:image"/>
 <meta content="2023-11-09T09:25:01.000Z" property="article:published_time"/>
-<meta content="2023-11-09T11:13:32.000Z" property="article:modified_time"/>
+<meta content="2023-11-09T11:17:45.000Z" property="article:modified_time"/>
 <meta content="Nichuanfang" property="article:author"/>
 <meta content="tools music youtube" property="article:tag"/>
 <meta content="summary_large_image" name="twitter:card"/>
@@ -165,28 +165,28 @@
 </blockquote>
 <hr/>
 <h1 id="环境准备"><a class="headerlink" href="#环境准备" title="环境准备"></a>环境准备</h1><h2 id="安装"><a class="headerlink" href="#安装" title="安装"></a>安装</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br/><span class="line">2</span><br/></pre></td><td class="code"><pre><code class="hljs bash">python -m pip install –upgrade pip<br/>pip install -U music-tool-kit<br/></code></pre></td></tr></table></figure>
-<p><img alt="help" lazyload="" src="https://raw.githubusercontent.com/nichuanfang/music-tool-kit/main/example/help.png" srcset="/img/loading.gif"/></p>
+<p><img alt="help" lazyload="" src="/img/post/music-tool-kit%E5%B7%A5%E5%85%B7/help.png" srcset="/img/loading.gif"/></p>
 <div class="note note-info">
 <p><strong>准备环境</strong></p><ul><li><a href="https://www.python.org/" rel="noopener" target="_blank">python</a>版本:<strong>3.11.0 及以上</strong></li><li>需安装<a href="https://ffmpeg.org/" rel="noopener" target="_blank">ffmpeg</a>并正确配置环境变量</li><li>如果需要下载 youtube 的音乐,需要准备<strong>科学上网</strong>环境</li><li><code>[]</code>标记的项目表示可不填</li><li>为规避特殊字符导致路径识别失败,<strong>标题</strong>、<strong>路径</strong>、<strong>URL</strong>等相关的参数尽量使用<strong>双引号</strong></li></ul>
 </div>
 <h2 id="升级"><a class="headerlink" href="#升级" title="升级"></a>升级</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br/></pre></td><td class="code"><pre><code class="hljs bash">pip install -U music-tool-kit<br/></code></pre></td></tr></table></figure>
 <h2 id="卸载"><a class="headerlink" href="#卸载" title="卸载"></a>卸载</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br/></pre></td><td class="code"><pre><code class="hljs bash">pip uninstall music-tool-kit<br/></code></pre></td></tr></table></figure>
 <h1 id="使用"><a class="headerlink" href="#使用" title="使用"></a>使用</h1><h2 id="音乐下载"><a class="headerlink" href="#音乐下载" title="音乐下载"></a>音乐下载</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br/><span class="line">2</span><br/></pre></td><td class="code"><pre><code class="hljs bash">mk  <span class="hljs-string">"网址"</span> <span class="hljs-string">"[标题]"</span> <span class="hljs-string">"[封面url]"</span><br/><br/></code></pre></td></tr></table></figure>
-<p><strong>普通下载</strong><br/><img alt="download" lazyload="" src="https://raw.githubusercontent.com/nichuanfang/music-tool-kit/main/example/download.png" srcset="/img/loading.gif"/></p>
+<p><strong>普通下载</strong><br/><img alt="download" lazyload="" src="/img/post/music-tool-kit%E5%B7%A5%E5%85%B7/download.png" srcset="/img/loading.gif"/></p>
 <p><strong>列表下载</strong>使用方法为 <code>mk "列表url | 列表序号"</code> ,<strong>url 需要为 <a href="https://www.youtube.com/" rel="noopener" target="_blank">youtube</a> 的列表格式(url 中含有 list=)</strong>,如果想下载全部歌曲,直接输入 <code>mk "列表url |"</code> 即可!</p>
 <p>例如:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br/></pre></td><td class="code"><pre><code class="hljs bash">mk <span class="hljs-string">"https://www.youtube.com/playlist?list=PL8B3F8A7B0A9F4DE8 | 1,2,3,4,5"</span><br/></code></pre></td></tr></table></figure>
-<p><img alt="download_list" lazyload="" src="https://raw.githubusercontent.com/nichuanfang/music-tool-kit/main/example/batch_download.png" srcset="/img/loading.gif"/></p>
+<p><img alt="download_list" lazyload="" src="/img/post/music-tool-kit%E5%B7%A5%E5%85%B7/batch_download.png" srcset="/img/loading.gif"/></p>
 <div class="note note-info">
 <ul><li>标题格式为 <strong>歌曲名-歌手(专辑名)</strong> 输出歌曲格式默认为 <strong>mp3</strong></li><li>music-tool-kit 会根据<strong>标题</strong>,自动将下载的音频元信息补全,包括歌曲名,歌手(艺术家),内置封面图片,以及专辑名称.如果不遵循该标题格式,元信息可能补全失败</li><li>仅支持下载 youtube 的列表下载,url|后面的列表序号之间需要用逗号分隔</li></ul>
 </div>
 <h2 id="音乐搜索"><a class="headerlink" href="#音乐搜索" title="音乐搜索"></a>音乐搜索</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br/></pre></td><td class="code"><pre><code class="hljs bash">mk -s <span class="hljs-string">"关键字"</span><br/></code></pre></td></tr></table></figure>
-<p><img alt="search" lazyload="" src="https://raw.githubusercontent.com/nichuanfang/music-tool-kit/main/example/search.png" srcset="/img/loading.gif"/><br/>支持 youtube bilibili 输出优先级 youtube &gt; bilibili,输入列表序号,输入标题,完成下载</p>
+<p><img alt="search" lazyload="" src="/img/post/music-tool-kit%E5%B7%A5%E5%85%B7/search.png" srcset="/img/loading.gif"/><br/>支持 youtube bilibili 输出优先级 youtube &gt; bilibili,输入列表序号,输入标题,完成下载</p>
 <div class="note note-info">
 <ul><li>最多显示 20 条数据</li><li>直接按<code>Enter</code>可以跳出序号选择界面,输入的序号不能超过最大返回的条目数</li><li>如果不想设置标题 直接按<code>Enter</code>即可</li></ul>
 </div>
 <h2 id="音乐剪辑"><a class="headerlink" href="#音乐剪辑" title="音乐剪辑"></a>音乐剪辑</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br/></pre></td><td class="code"><pre><code class="hljs bash">mk -c <span class="hljs-string">"输入的mp3文件"</span> 开始时间 结束时间<br/></code></pre></td></tr></table></figure>
-<p><img alt="clip" lazyload="" src="https://raw.githubusercontent.com/nichuanfang/music-tool-kit/main/example/clip.png" srcset="/img/loading.gif"/></p>
+<p><img alt="clip" lazyload="" src="/img/post/music-tool-kit%E5%B7%A5%E5%85%B7/clip.png" srcset="/img/loading.gif"/></p>
 <blockquote>
 <p>Tips: 时间格式为 <code>00:00:00</code></p>
 </blockquote>
@@ -200,12 +200,12 @@
 <li><code>UVR_MDXNET_KARA_2</code> (一般,人声剔除不干净,声音忽高忽低)</li>
 <li><code>Kim_Inst</code> (一般)</li>
 </ul>
-<p><img alt="extract" lazyload="" src="https://raw.githubusercontent.com/nichuanfang/music-tool-kit/main/example/inst.png" srcset="/img/loading.gif"/></p>
+<p><img alt="extract" lazyload="" src="/img/post/music-tool-kit%E5%B7%A5%E5%85%B7/inst.png" srcset="/img/loading.gif"/></p>
 <div class="note note-warning">
 <ul><li>默认模型为<code>UVR_MDXNET_Main</code>,具体请结合音乐类型和自己的实际听感自行调整模型</li><li>伴奏提取比较吃 cpu 性能,时间比较漫长,请耐心等待,大概需要 5~10 分钟</li></ul>
 </div>
 <h2 id="csv-批量模板"><a class="headerlink" href="#csv-批量模板" title="csv 批量模板"></a>csv 批量模板</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br/></pre></td><td class="code"><pre><code class="hljs bash">mk -t<br/></code></pre></td></tr></table></figure>
-<p>生成的模板文件如下:<br/><img alt="csv_template" lazyload="" src="https://raw.githubusercontent.com/nichuanfang/music-tool-kit/main/example/csv_template.png" srcset="/img/loading.gif"/><br/>用户自行填写下载信息,保存后使用<code>mk "csv文件"</code>即可批量下载</p>
+<p>生成的模板文件如下:<br/><img alt="csv_template" lazyload="" src="/img/post/music-tool-kit%E5%B7%A5%E5%85%B7/csv_template.png" srcset="/img/loading.gif"/><br/>用户自行填写下载信息,保存后使用<code>mk "csv文件"</code>即可批量下载</p>
 <table>
 <thead>
 <tr>
@@ -227,7 +227,7 @@
 </tr>
 </tbody></table>
 <h2 id="批量下载"><a class="headerlink" href="#批量下载" title="批量下载"></a>批量下载</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br/></pre></td><td class="code"><pre><code class="hljs bash">mk <span class="hljs-string">"csv文件"</span><br/></code></pre></td></tr></table></figure>
-<p><img alt="csv_download" lazyload="" src="https://raw.githubusercontent.com/nichuanfang/music-tool-kit/main/example/csv_download.png" srcset="/img/loading.gif"/></p>
+<p><img alt="csv_download" lazyload="" src="/img/post/music-tool-kit%E5%B7%A5%E5%85%B7/csv_download.png" srcset="/img/loading.gif"/></p>
 <h1 id="License"><a class="headerlink" href="#License" title="License"></a>License</h1><p>This work is released under the MIT license. A copy of the license is provided in the <a href="https://raw.githubusercontent.com/nichuanfang/music-tool-kit/main/LICENSE" rel="noopener" target="_blank">LICENSE</a> file.</p>
 </div>
 <hr/>
