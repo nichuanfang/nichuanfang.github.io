@@ -18,25 +18,24 @@
   <meta name="author" content="Nichuanfang">
   <meta name="keywords" content="">
   
-    <meta name="description" content="泛域名证书申请 (Ubuntu 18) 全网 HTTPS 时代就要到来，Let’s Encrypt 三个月有效期的免费 HTTPS 证书现在支持泛域名了，我们可以通过 Certbot 非常方便的申请和更新证书。网上很多关于 Certbot 的文章，但是关于泛域名证书的自动更新很少提及，或者很多误区，这里简单的讲解一下。  一丶 Certbot 安装安装非常简单，只要进入 Certbot 官网选择对">
+    <meta name="description" content="集中管理同一个账户下的变量和密钥使用步骤编辑config.json             topic: 当前区块的主要分类repositories: 配置的变量和密钥应用到哪些仓库vars: 全局变量 通过 $ 调用secrets: 全局密钥 通过 $ 调用             触发工作流generate and sync             your project-&gt; Sett">
 <meta property="og:type" content="article">
-<meta property="og:title" content="泛域名证书申请">
-<meta property="og:url" content="https://blog.jaychou.site/2023/11/10/%E6%B3%9B%E5%9F%9F%E5%90%8D%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7/index.html">
+<meta property="og:title" content="GithubActions密钥和变量统一管理">
+<meta property="og:url" content="https://blog.jaychou.site/2023/11/10/GithubActions%E5%AF%86%E9%92%A5%E5%92%8C%E5%8F%98%E9%87%8F%E7%BB%9F%E4%B8%80%E7%AE%A1%E7%90%86/index.html">
 <meta property="og:site_name" content="个人博客">
-<meta property="og:description" content="泛域名证书申请 (Ubuntu 18) 全网 HTTPS 时代就要到来，Let’s Encrypt 三个月有效期的免费 HTTPS 证书现在支持泛域名了，我们可以通过 Certbot 非常方便的申请和更新证书。网上很多关于 Certbot 的文章，但是关于泛域名证书的自动更新很少提及，或者很多误区，这里简单的讲解一下。  一丶 Certbot 安装安装非常简单，只要进入 Certbot 官网选择对">
+<meta property="og:description" content="集中管理同一个账户下的变量和密钥使用步骤编辑config.json             topic: 当前区块的主要分类repositories: 配置的变量和密钥应用到哪些仓库vars: 全局变量 通过 $ 调用secrets: 全局密钥 通过 $ 调用             触发工作流generate and sync             your project-&gt; Sett">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://blog.jaychou.site/img/post/%E6%B3%9B%E5%9F%9F%E5%90%8D%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7/index.webp">
-<meta property="article:published_time" content="2023-11-09T17:04:31.000Z">
-<meta property="article:modified_time" content="2023-11-09T17:12:36.000Z">
+<meta property="og:image" content="https://blog.jaychou.site/img/post/GithubActions%E5%AF%86%E9%92%A5%E5%92%8C%E5%8F%98%E9%87%8F%E7%BB%9F%E4%B8%80%E7%AE%A1%E7%90%86/index.webp">
+<meta property="article:published_time" content="2023-11-09T17:34:19.000Z">
+<meta property="article:modified_time" content="2023-11-09T17:34:19.000Z">
 <meta property="article:author" content="Nichuanfang">
-<meta property="article:tag" content="域名">
-<meta property="article:tag" content="HTTPS">
+<meta property="article:tag" content="github">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://blog.jaychou.site/img/post/%E6%B3%9B%E5%9F%9F%E5%90%8D%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7/index.webp">
+<meta name="twitter:image" content="https://blog.jaychou.site/img/post/GithubActions%E5%AF%86%E9%92%A5%E5%92%8C%E5%8F%98%E9%87%8F%E7%BB%9F%E4%B8%80%E7%AE%A1%E7%90%86/index.webp">
   
   
   
-  <title>泛域名证书申请 - 个人博客</title>
+  <title>GithubActions密钥和变量统一管理 - 个人博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -199,13 +198,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/post/%E6%B3%9B%E5%9F%9F%E5%90%8D%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7/banner.webp') no-repeat center center; background-size: cover;">
+     style="background: url('/img/post/GithubActions%E5%AF%86%E9%92%A5%E5%92%8C%E5%8F%98%E9%87%8F%E7%BB%9F%E4%B8%80%E7%AE%A1%E7%90%86/banner.webp') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="泛域名证书申请"></span>
+            <span id="subtitle" data-typed-text="GithubActions密钥和变量统一管理"></span>
           
         </div>
 
@@ -216,7 +215,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-11-10 01:04" pubdate>
+        <time datetime="2023-11-10 01:34" pubdate>
           2023年11月10日 凌晨
         </time>
       </span>
@@ -228,7 +227,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.4k 字
+          331 字
         
       </span>
     
@@ -239,7 +238,7 @@
         
         
         
-          20 分钟
+          3 分钟
         
       </span>
     
@@ -276,44 +275,18 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">泛域名证书申请</h1>
+            <h1 id="seo-header">GithubActions密钥和变量统一管理</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="泛域名证书申请-Ubuntu-18"><a href="#泛域名证书申请-Ubuntu-18" class="headerlink" title="泛域名证书申请 (Ubuntu 18)"></a>泛域名证书申请 (Ubuntu 18)</h1><blockquote>
-<p>全网 HTTPS 时代就要到来，<a target="_blank" rel="noopener" href="https://letsencrypt.org/">Let’s Encrypt</a> 三个月有效期的免费 HTTPS 证书现在支持泛域名了，我们可以通过 <a target="_blank" rel="noopener" href="https://certbot.eff.org/">Certbot</a> 非常方便的申请和更新证书。网上很多关于 Certbot 的文章，但是关于泛域名证书的自动更新很少提及，或者很多误区，这里简单的讲解一下。</p>
-</blockquote>
-<h2 id="一丶-Certbot-安装"><a href="#一丶-Certbot-安装" class="headerlink" title="一丶 Certbot 安装"></a>一丶 Certbot 安装</h2><p>安装非常简单，只要进入 Certbot 官网选择对应的系统和 Web 服务软件就会提示如何安装，按照提示操作就可以了。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash">apt-get update<br>apt-get install software-properties-common<br>add-apt-repository universe<br>add-apt-repository ppa:certbot/certbot<br>apt-get update<br>apt-get install python3-certbot-nginx<br></code></pre></td></tr></table></figure>
-
-<h2 id="二丶-申请泛域名证书"><a href="#二丶-申请泛域名证书" class="headerlink" title="二丶 申请泛域名证书"></a>二丶 申请泛域名证书</h2><p>这里用到了一个开源工具：<a target="_blank" rel="noopener" href="https://github.com/ywdblog/certbot-letencrypt-wildcardcertificates-alydns-au">certbot-letencrypt-wildcardcertificates-alydns-au</a>工具就不介绍了，点开链接作者写的很详细了，看看怎么用吧</p>
-<h3 id="1-下载"><a href="#1-下载" class="headerlink" title="1. 下载"></a>1. 下载</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> ~/code<br>git <span class="hljs-built_in">clone</span> https://github.com/ywdblog/certbot-letencrypt-wildcardcertificates-alydns-au<br><span class="hljs-built_in">mv</span> certbot-letencrypt-wildcardcertificates-alydns-au certbot<br><span class="hljs-built_in">cd</span> certbot<br><span class="hljs-built_in">chmod</span> 777 au.sh<br></code></pre></td></tr></table></figure>
-
-<h3 id="2-配置"><a href="#2-配置" class="headerlink" title="2. 配置"></a>2. 配置</h3><h4 id="1-domain-ini"><a href="#1-domain-ini" class="headerlink" title="(1) domain.ini"></a>(1) domain.ini</h4><div class="note note-warning">
-            <p>如果 domain.ini 文件没有你的根域名，请自行添加</p>
+                <h1 id="集中管理同一个账户下的变量和密钥"><a href="#集中管理同一个账户下的变量和密钥" class="headerlink" title="集中管理同一个账户下的变量和密钥"></a>集中管理同一个账户下的变量和密钥</h1><h2 id="使用步骤"><a href="#使用步骤" class="headerlink" title="使用步骤"></a>使用步骤</h2><h3 id="编辑config-json"><a href="#编辑config-json" class="headerlink" title="编辑config.json"></a>编辑<a target="_blank" rel="noopener" href="https://github.com/nichuanfang/.github/blob/main/config.json"><code>config.json</code></a></h3><div class="note note-info">
+            <p>topic: 当前区块的主要分类<br>repositories: 配置的变量和密钥应用到哪些仓库<br>vars: 全局变量 通过 $ 调用<br>secrets: 全局密钥 通过 $ 调用</p>
           </div>
 
-<h4 id="2-DNS-API-密钥"><a href="#2-DNS-API-密钥" class="headerlink" title="(2) DNS API 密钥"></a>(2) DNS API 密钥</h4><p><code>ALY_KEY</code>和 <code>ALY_TOKEN</code>：阿里云 <a target="_blank" rel="noopener" href="https://help.aliyun.com/knowledge_detail/38738.html">API key 和 Secrec 官方申请文档</a><br><img width="914" alt="屏幕截图 2023-03-30 235738" src="https://user-images.githubusercontent.com/37105637/228915797-20625aa4-5263-4817-9e11-90f7a9484999.png" srcset="/img/loading.gif" lazyload></p>
-<h4 id="3-修改-au-sh-的-python-版本"><a href="#3-修改-au-sh-的-python-版本" class="headerlink" title="(3) 修改 au.sh 的 python 版本"></a>(3) 修改 au.sh 的 python 版本</h4><p><img src="https://user-images.githubusercontent.com/37105637/228916010-d1fcf8c3-404b-4d2a-8712-98cbc979b59e.png" srcset="/img/loading.gif" lazyload alt="image"></p>
-<h4 id="4-选择运行环境"><a href="#4-选择运行环境" class="headerlink" title="(4) 选择运行环境"></a>(4) 选择运行环境</h4><p>Python(支持 2.7 和 3.7，无需任何第三方库) Python 操作阿里云 DNS，增加&#x2F;清空 DNS。<br><code>au.sh python aly add/clean</code></p>
-<h4 id="5-注释掉报错代码"><a href="#5-注释掉报错代码" class="headerlink" title="(5) 注释掉报错代码"></a>(5) 注释掉报错代码</h4><p><img src="https://user-images.githubusercontent.com/37105637/228916235-4e1b4a31-a4c6-4545-8163-17452ceb5d90.png" srcset="/img/loading.gif" lazyload alt="image"></p>
-<h3 id="3-申请证书"><a href="#3-申请证书" class="headerlink" title="3. 申请证书"></a>3. 申请证书</h3><p>测试是否有错误：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">certbot certonly  -d *.example.com --manual --preferred-challenges dns --dry-run  --manual-auth-hook <span class="hljs-string">&quot;/root/code/certbot/au.sh python aly add&quot;</span> --manual-cleanup-hook <span class="hljs-string">&quot;/root/code/certbot/au.sh python aly clean&quot;</span><br></code></pre></td></tr></table></figure>
-
-<p><strong>实际申请:</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">certbot certonly  -d *.example.com --manual --preferred-challenges dns --manual-auth-hook <span class="hljs-string">&quot;/root/code/certbot/au.sh python aly add&quot;</span> --manual-cleanup-hook <span class="hljs-string">&quot;/root/code/certbot/au.sh python aly clean&quot;</span><br></code></pre></td></tr></table></figure>
-
-<h3 id="4-续期证书"><a href="#4-续期证书" class="headerlink" title="4. 续期证书"></a>4. 续期证书</h3><h4 id="对机器上所有证书-renew"><a href="#对机器上所有证书-renew" class="headerlink" title="对机器上所有证书 renew"></a>对机器上所有证书 renew</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">certbot renew  --manual --preferred-challenges dns --manual-auth-hook <span class="hljs-string">&quot;/root/code/certbot/au.sh python aly add&quot;</span> --manual-cleanup-hook <span class="hljs-string">&quot;/root/code/certbot/au.sh python aly clean&quot;</span><br></code></pre></td></tr></table></figure>
-
-<h4 id="对某一张证书进行续期"><a href="#对某一张证书进行续期" class="headerlink" title="对某一张证书进行续期"></a>对某一张证书进行续期</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment">#先看看机器上有多少证书：</span><br>certbot certificates<br><span class="hljs-comment">#记住证书名，比如 simplehttps.com，然后运行下列命令 renew</span><br>certbot renew --cert-name simplehttps.com  --manual-auth-hook <span class="hljs-string">&quot;/root/code/certbot/au.sh python aly add&quot;</span> --manual-cleanup-hook <span class="hljs-string">&quot;/root/code/certbot/au.sh python aly clean&quot;</span><br></code></pre></td></tr></table></figure>
-
-<h2 id="三丶-加入-crontab"><a href="#三丶-加入-crontab" class="headerlink" title="三丶 加入 crontab"></a>三丶 加入 crontab</h2><p>编写证书更新脚本</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/bin/bash</span><br>docker stop nginx<br>certbot renew --cert-name example.com --manual-auth-hook <span class="hljs-string">&quot;/root/code/certbot/au.sh python aly add&quot;</span> --manual-cleanup-hook <span class="hljs-string">&quot;/root/code/certbot/au.sh python aly clean&quot;</span><br><span class="hljs-built_in">cp</span> /etc/letsencrypt/live/example.com/fullchain.pem /opt/docker/nginx/cert<br><span class="hljs-built_in">cp</span> /etc/letsencrypt/live/example.com/privkey.pem /opt/docker/nginx/cert<br><span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Certificates Renewed&quot;</span><br><span class="hljs-built_in">chmod</span> 777 /opt/docker/nginx/cert/*.pem<br><span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Read Permission Granted for Private Key&quot;</span><br>docker start nginx<br></code></pre></td></tr></table></figure>
-
-<p>添加执行权限 <code>chmod +x /opt/docker/nginx/cert/renew.sh</code></p>
-<p>定时任务 <code>crontab -e</code>:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment">#证书有效期&lt;30天才会renew</span><br>0 4 1 * * /bin/bash /opt/docker/nginx/cert/renew.sh<br></code></pre></td></tr></table></figure>
+<h3 id="触发工作流generate-and-sync"><a href="#触发工作流generate-and-sync" class="headerlink" title="触发工作流generate and sync"></a>触发工作流<a target="_blank" rel="noopener" href="https://github.com/nichuanfang/.github/actions/workflows/main.yml"><code>generate and sync</code></a></h3><div class="note note-info">
+            <ol><li><p>your project-&gt; Settings -&gt; Secrets and variables -&gt; config your secrets and variables</p></li><li><p>生成的<a target="_blank" rel="noopener" href="https://github.com/nichuanfang/.github/blob/main/.github/workflows/synchronize_secrets.yml"><code>synchronize_secrets.yml</code></a>和<a target="_blank" rel="noopener" href="https://github.com/nichuanfang/.github/blob/main/.github/workflows/synchronize_variables.yml"><code>synchronize_variables.yml</code></a>为两个新的工作流</p></li><li><p>synchronize_variables.yml: 同步全局变量</p></li><li><p>synchronize_secrets.yml: 同步全局密钥</p></li></ol>
+          </div>
 
                 
               </div>
@@ -332,7 +305,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E5%BB%BA%E7%AB%99/" class="category-chain-item">建站</a>
+  <a href="/categories/Devops/" class="category-chain-item">Devops</a>
   
   
 
@@ -347,9 +320,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E5%9F%9F%E5%90%8D/" class="print-no-link">#域名</a>
-      
-        <a href="/tags/HTTPS/" class="print-no-link">#HTTPS</a>
+        <a href="/tags/github/" class="print-no-link">#github</a>
       
     </div>
   
@@ -361,8 +332,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>泛域名证书申请</div>
-      <div>https://blog.jaychou.site/2023/11/10/泛域名证书申请/</div>
+      <div>GithubActions密钥和变量统一管理</div>
+      <div>https://blog.jaychou.site/2023/11/10/GithubActions密钥和变量统一管理/</div>
     </div>
     <div class="license-meta">
       
@@ -406,18 +377,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/11/10/GithubActions%E5%AF%86%E9%92%A5%E5%92%8C%E5%8F%98%E9%87%8F%E7%BB%9F%E4%B8%80%E7%AE%A1%E7%90%86/" title="GithubActions密钥和变量统一管理">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">GithubActions密钥和变量统一管理</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/11/09/music-tool-kit%E5%B7%A5%E5%85%B7/" title="music-tool-kit工具">
-                        <span class="hidden-mobile">music-tool-kit工具</span>
+                      <a href="/2023/11/10/%E6%B3%9B%E5%9F%9F%E5%90%8D%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7/" title="泛域名证书申请">
+                        <span class="hidden-mobile">泛域名证书申请</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
