@@ -8,21 +8,19 @@
     <link href="/2023/11/26/%E4%B8%BB%E9%A2%98%E6%A8%A1%E6%9D%BF%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/"/>
     <url>/2023/11/26/%E4%B8%BB%E9%A2%98%E6%A8%A1%E6%9D%BF%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/</url>
     
-    <content type="html"><![CDATA[<h1 id="主题模板食用说明"><a href="#主题模板食用说明" class="headerlink" title="主题模板食用说明~"></a>主题模板食用说明~</h1><h2 id="Front-matter-说明"><a href="#Front-matter-说明" class="headerlink" title="Front-matter 说明"></a>Front-matter 说明</h2><ol><li><code>tags</code>: 标签</li><li><code>categories</code>: 分类</li><li><code>index_img_url</code>: 首页缩略图 url 如果配置将忽略当前文件夹的 index.jpg</li><li><code>banner_img_url</code>: 文章配图 url 如果配置将忽略当前文件夹的 banner.jpg</li><li><code>banner_img_ratio</code>: banner 图片比例</li><li><code>sticky</code>: 置顶配置 数字越大优先级越高</li></ol><div class="note note-info">            <ul><li>如果配置了 index_img_url,则当前文件夹下的 index.jpg 无效</li><li>如果配置了 banner_img_url,则当前文件夹下的 banner.jpg 无效</li><li>如果只配置了 banner_img_url,则 index_img 使用相同的图片源</li><li>如果只配置了 index.jpg 或者 banner.jpg,则另一个缺省为 同一个图片</li></ul>          </div><h2 id="便签"><a href="#便签" class="headerlink" title="便签"></a>便签</h2><p>在 markdown 中加入如下的代码来使用便签：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">&#123;% note success %&#125;<br>文字 或者 `markdown` 均可<br>&#123;% endnote %&#125;<br></code></pre></td></tr></table></figure><p>可选便签：</p><div class="note note-primary">            <p>primary</p>          </div><div class="note note-secondary">            <p>secondary</p>          </div><div class="note note-success">            <p>success</p>          </div><div class="note note-danger">            <p>danger</p>          </div><div class="note note-warning">            <p>warning</p>          </div><div class="note note-info">            <p>info</p>          </div><div class="note note-light">            <p>light</p>          </div><blockquote><p>使用 primary 时 <code>note primary</code> 和 <code>endnote</code> 需单独一行，否则会出现问题</p></blockquote><h2 id="折叠块"><a href="#折叠块" class="headerlink" title="折叠块"></a>折叠块</h2><p>使用折叠块，可以折叠代码、图片、文字等任何内容，你可以在 markdown 中按如下格式：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">&#123;% <span class="hljs-built_in">fold</span> info @title %&#125;<br>需要折叠的一段内容，支持 markdown<br>&#123;% endfold %&#125;<br></code></pre></td></tr></table></figure><blockquote><p>info: 和行内标签类似的可选参数 title: 折叠块上的 标题</p></blockquote><h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><ol><li>技术：知识技能</li><li>应用：应用笔记</li><li>方法：方法论（经验谈），如工程方法</li><li>工具：针对具体工具的介绍、使用方法、分析适用场景等；使用工具解决具体问题，应该放在「应用」里</li><li>作品：自己的作品、个人项目日志等</li><li>杂谈：生活、碎碎念，聊天打屁性质</li><li>其他：没法分类的东西</li></ol><h2 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h2><p>Tags 根据需要灵活添加，但应避免添加太细的 tag 以避免膨胀，例如</p><ol><li>细分领域：计算机技术、电子、嵌入式软件</li><li>形式：日志</li><li>具体内容：个人作品、生活、方法论、烹饪</li></ol>]]></content>
+    <content type="html"><![CDATA[<h1 id="主题模板食用说明"><a href="#主题模板食用说明" class="headerlink" title="主题模板食用说明~"></a>主题模板食用说明~</h1><h2 id="Front-matter-说明"><a href="#Front-matter-说明" class="headerlink" title="Front-matter 说明"></a>Front-matter 说明</h2><ol><li><code>tags</code>: 标签</li><li><code>categories</code>: 分类</li><li><code>index_img_url</code>: 首页缩略图 url 如果配置将忽略当前文件夹的 index.jpg</li><li><code>banner_img_url</code>: 文章配图 url 如果配置将忽略当前文件夹的 banner.jpg</li><li><code>banner_img_ratio</code>: banner 图片比例</li><li><code>sticky</code>: 置顶配置 数字越大优先级越高</li></ol><div class="note note-info">            <ul><li>如果配置了 index_img_url,则当前文件夹下的 index.jpg 无效</li><li>如果配置了 banner_img_url,则当前文件夹下的 banner.jpg 无效</li><li>如果只配置了 banner_img_url,则 index_img 使用相同的图片源</li><li>如果只配置了 index.jpg 或者 banner.jpg,则另一个缺省为 同一个图片</li></ul>          </div><h2 id="便签"><a href="#便签" class="headerlink" title="便签"></a>便签</h2><p>在 markdown 中加入如下的代码来使用便签：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">&#123;% note success %&#125;<br>文字 或者 `markdown` 均可<br>&#123;% endnote %&#125;<br></code></pre></td></tr></table></figure><p>可选便签：</p><div class="note note-primary">            <p>primary</p>          </div><div class="note note-secondary">            <p>secondary</p>          </div><div class="note note-success">            <p>success</p>          </div><div class="note note-danger">            <p>danger</p>          </div><div class="note note-warning">            <p>warning</p>          </div><div class="note note-info">            <p>info</p>          </div><div class="note note-light">            <p>light</p>          </div><blockquote><p>使用 primary 时 <code>note primary</code> 和 <code>endnote</code> 需单独一行，否则会出现问题</p></blockquote><h2 id="折叠块"><a href="#折叠块" class="headerlink" title="折叠块"></a>折叠块</h2><p>使用折叠块，可以折叠代码、图片、文字等任何内容，你可以在 markdown 中按如下格式：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">&#123;% <span class="hljs-built_in">fold</span> info @title %&#125;<br>需要折叠的一段内容，支持 markdown<br>&#123;% endfold %&#125;<br></code></pre></td></tr></table></figure><blockquote><p>info: 和行内标签类似的可选参数 title: 折叠块上的 标题</p></blockquote><h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><ol><li>作品</li><li>工具</li><li>技术</li><li>应用</li><li>方法</li><li>杂谈</li><li>其他</li></ol><h1 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h1><p>Tags 根据需要灵活添加，但应避免添加太细的 tag 以避免膨胀，例如</p><ol><li>linux</li><li>web</li><li>windows</li><li>Ubuntu</li><li>机器学习</li><li>大数据</li><li>docker</li><li>分布式</li><li>计算机网络</li><li>设计</li><li>工具</li><li>日志</li><li>编程语言</li><li>计算机软件</li><li>软件工程</li><li>听歌</li><li>java</li><li>spring</li><li>redis</li><li>python</li></ol>]]></content>
     
     
     <categories>
       
-      <category>主题配置</category>
+      <category>应用</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>hexo</tag>
-      
-      <tag>fluid</tag>
+      <tag>hexo主题</tag>
       
     </tags>
     
@@ -47,7 +45,7 @@
     
     <tags>
       
-      <tag>环境变量 windows</tag>
+      <tag>windows</tag>
       
     </tags>
     
@@ -65,14 +63,16 @@
     
     <categories>
       
-      <category>Devops</category>
+      <category>技术</category>
+      
+      <category>工具</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>github</tag>
+      <tag>GithubActions</tag>
       
     </tags>
     
@@ -90,16 +90,14 @@
     
     <categories>
       
-      <category>建站</category>
+      <category>技术</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>域名</tag>
-      
-      <tag>HTTPS</tag>
+      <tag>计算机网络</tag>
       
     </tags>
     
@@ -146,7 +144,7 @@
     
     <categories>
       
-      <category>编程语言</category>
+      <category>技术</category>
       
     </categories>
     
@@ -171,14 +169,14 @@
     
     <categories>
       
-      <category>个人博客</category>
+      <category>应用</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>hexo</tag>
+      <tag>hexo主题</tag>
       
     </tags>
     
@@ -191,19 +189,19 @@
     <link href="/2023/11/09/hello-world/"/>
     <url>/2023/11/09/hello-world/</url>
     
-    <content type="html"><![CDATA[<blockquote><p>REALITY  使用其它端口貌似也 具有相同伪装性（不打保证）， 对于自己服务器上已经有站点的，也不用为了共存另外设置反向代理或分流之类的，直接使用其它端口就可以了。</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs bash"><br>```routeros<br>[信息] 已重启 xray 服务<br>-------------- client config --------------<br>address     : <span class="hljs-string">&quot;45.32.50.85&quot;</span><br>port        : 443<br>protocol    : <span class="hljs-string">&quot;vless&quot;</span><br><span class="hljs-built_in">id</span>          : <span class="hljs-string">&quot;422939fd-f699-4a26-a6d7-61e17ee3dd88&quot;</span><br>flow        : <span class="hljs-string">&quot;xtls-rprx-vision&quot;</span><br>network     : <span class="hljs-string">&quot;tcp&quot;</span><br>TLS         : <span class="hljs-string">&quot;reality&quot;</span><br>SNI         : <span class="hljs-string">&quot;lovelive-anime.jp&quot;</span>,<span class="hljs-string">&quot;www.lovelive-anime.jp&quot;</span><br>Fingerprint : <span class="hljs-string">&quot;chrome&quot;</span><br>PublicKey   : <span class="hljs-string">&quot;LRrsQXaa2O2LWICHuZ9rY3vq9mC7m2iHxjLEikS3xBA&quot;</span><br>ShortId     : <span class="hljs-string">&quot;&quot;</span>,<span class="hljs-string">&quot;6d&quot;</span>,<span class="hljs-string">&quot;85dd&quot;</span>,<span class="hljs-string">&quot;e04cccd5&quot;</span>,<span class="hljs-string">&quot;5042dcec226b1621&quot;</span><br>SpiderX     : <span class="hljs-string">&quot;/&quot;</span><br>------------------------------------------<br>是否生成分享链接[y/n]:<br></code></pre></td></tr></table></figure><!-- 块引用 --><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css">iptables -<span class="hljs-selector-tag">I</span> <span class="hljs-selector-tag">INPUT</span> -<span class="hljs-selector-tag">p</span> tcp <span class="hljs-attr">--dport</span> <span class="hljs-number">443</span> -j ACCEPT<br></code></pre></td></tr></table></figure><p>以后要进入这个管理脚本界面输入 <code>bash Xray-script.sh</code> 这个<strong>命令</strong>就可以进入了，<em>现在</em>别管<strong>dsd</strong>。</p><div class="note note-success">            <p>这是一段 success 效果测试代码</p>          </div><div class="note note-info">            <p>这是一段 info 效果测试代码</p>          </div><div class="note note-warning">            <p>这是一段 warning 效果测试代码</p>          </div><div class="note note-danger">            <p>这是一段 danger 效果测试代码</p>          </div><div class="note note-primary">            <p>这是一段 primary 效果测试代码</p>          </div><p><img src="https://i0.wp.com/www.additudemag.com/wp-content/uploads/2016/11/78_8_Diagnose_Kids_Autism-Misdiagnosis_Slideshow_78_girl-father-playroom_ts_83480810.jpg"></p><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New    Post   &quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>REALITY 使用其它端口貌似也 具有相同伪装性（不打保证）， 对于自己服务器上已经有站点的，也不用为了共存另外设置反向代理或分流之类的，直接使用其它端口就可以了。</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs bash"><br>```routeros<br>[信息] 已重启 xray 服务<br>-------------- client config --------------<br>address     : <span class="hljs-string">&quot;45.32.50.85&quot;</span><br>port        : 443<br>protocol    : <span class="hljs-string">&quot;vless&quot;</span><br><span class="hljs-built_in">id</span>          : <span class="hljs-string">&quot;422939fd-f699-4a26-a6d7-61e17ee3dd88&quot;</span><br>flow        : <span class="hljs-string">&quot;xtls-rprx-vision&quot;</span><br>network     : <span class="hljs-string">&quot;tcp&quot;</span><br>TLS         : <span class="hljs-string">&quot;reality&quot;</span><br>SNI         : <span class="hljs-string">&quot;lovelive-anime.jp&quot;</span>,<span class="hljs-string">&quot;www.lovelive-anime.jp&quot;</span><br>Fingerprint : <span class="hljs-string">&quot;chrome&quot;</span><br>PublicKey   : <span class="hljs-string">&quot;LRrsQXaa2O2LWICHuZ9rY3vq9mC7m2iHxjLEikS3xBA&quot;</span><br>ShortId     : <span class="hljs-string">&quot;&quot;</span>,<span class="hljs-string">&quot;6d&quot;</span>,<span class="hljs-string">&quot;85dd&quot;</span>,<span class="hljs-string">&quot;e04cccd5&quot;</span>,<span class="hljs-string">&quot;5042dcec226b1621&quot;</span><br>SpiderX     : <span class="hljs-string">&quot;/&quot;</span><br>------------------------------------------<br>是否生成分享链接[y/n]:<br></code></pre></td></tr></table></figure><!-- 块引用 --><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css">iptables -<span class="hljs-selector-tag">I</span> <span class="hljs-selector-tag">INPUT</span> -<span class="hljs-selector-tag">p</span> tcp <span class="hljs-attr">--dport</span> <span class="hljs-number">443</span> -j ACCEPT<br></code></pre></td></tr></table></figure><p>以后要进入这个管理脚本界面输入 <code>bash Xray-script.sh</code> 这个<strong>命令</strong>就可以进入了，<em>现在</em>别管<strong>dsd</strong>。</p><div class="note note-success">            <p>这是一段 success 效果测试代码</p>          </div><div class="note note-info">            <p>这是一段 info 效果测试代码</p>          </div><div class="note note-warning">            <p>这是一段 warning 效果测试代码</p>          </div><div class="note note-danger">            <p>这是一段 danger 效果测试代码</p>          </div><div class="note note-primary">            <p>这是一段 primary 效果测试代码</p>          </div><p><img src="https://i0.wp.com/www.additudemag.com/wp-content/uploads/2016/11/78_8_Diagnose_Kids_Autism-Misdiagnosis_Slideshow_78_girl-father-playroom_ts_83480810.jpg"></p><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New    Post   &quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
     
     <categories>
       
-      <category>hello-world</category>
+      <category>其他</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>hello-world</tag>
+      <tag>test</tag>
       
     </tags>
     
@@ -221,7 +219,7 @@
     
     <categories>
       
-      <category>编程语言</category>
+      <category>技术</category>
       
     </categories>
     
