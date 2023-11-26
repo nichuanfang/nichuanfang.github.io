@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>windows环境变量配置</title>
+    <link href="/2023/11/26/windows%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE/"/>
+    <url>/2023/11/26/windows%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE/</url>
+    
+    <content type="html"><![CDATA[<h1 id="环境变量配置-win10-11"><a href="#环境变量配置-win10-11" class="headerlink" title="环境变量配置(win10&#x2F;11)"></a>环境变量配置(win10&#x2F;11)</h1><h2 id="java"><a href="#java" class="headerlink" title="java"></a>java</h2><h2 id="python"><a href="#python" class="headerlink" title="python"></a>python</h2><h2 id="go"><a href="#go" class="headerlink" title="go"></a>go</h2><h2 id="git"><a href="#git" class="headerlink" title="git"></a>git</h2><h2 id="maven"><a href="#maven" class="headerlink" title="maven"></a>maven</h2><h2 id="tomcat"><a href="#tomcat" class="headerlink" title="tomcat"></a>tomcat</h2><h2 id="ffmpeg"><a href="#ffmpeg" class="headerlink" title="ffmpeg"></a>ffmpeg</h2><h2 id="yt-dlp"><a href="#yt-dlp" class="headerlink" title="yt-dlp"></a>yt-dlp</h2>]]></content>
+    
+    
+    <categories>
+      
+      <category>应用</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>环境变量 windows</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>GithubActions密钥和变量统一管理</title>
     <link href="/2023/11/10/GithubActions%E5%AF%86%E9%92%A5%E5%92%8C%E5%8F%98%E9%87%8F%E7%BB%9F%E4%B8%80%E7%AE%A1%E7%90%86/"/>
     <url>/2023/11/10/GithubActions%E5%AF%86%E9%92%A5%E5%92%8C%E5%8F%98%E9%87%8F%E7%BB%9F%E4%B8%80%E7%AE%A1%E7%90%86/</url>
