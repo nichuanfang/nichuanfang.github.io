@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.jaychou.site/2023/11/10/GithubActions%E5%AF%86%E9%92%A5%E5%92%8C%E5%8F%98%E9%87%8F%E7%BB%9F%E4%B8%80%E7%AE%A1%E7%90%86/</loc>
+    <loc>https://blog.jaychou.site/about/index.html</loc>
     
     <lastmod>2023-11-26</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://blog.jaychou.site/about/index.html</loc>
+    <loc>https://blog.jaychou.site/2023/11/10/GithubActions%E5%AF%86%E9%92%A5%E5%92%8C%E5%8F%98%E9%87%8F%E7%BB%9F%E4%B8%80%E7%AE%A1%E7%90%86/</loc>
     
     <lastmod>2023-11-26</lastmod>
     
@@ -122,6 +122,13 @@
   </url>
   
   <url>
+    <loc>https://blog.jaychou.site/tags/test/</loc>
+    <lastmod>2023-11-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.jaychou.site/tags/tools/</loc>
     <lastmod>2023-11-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -137,13 +144,6 @@
   
   <url>
     <loc>https://blog.jaychou.site/tags/youtube/</loc>
-    <lastmod>2023-11-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.jaychou.site/tags/test/</loc>
     <lastmod>2023-11-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -187,14 +187,14 @@
   </url>
   
   <url>
-    <loc>https://blog.jaychou.site/categories/%E5%B7%A5%E5%85%B7/</loc>
+    <loc>https://blog.jaychou.site/categories/%E5%85%B6%E4%BB%96/</loc>
     <lastmod>2023-11-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.jaychou.site/categories/%E5%85%B6%E4%BB%96/</loc>
+    <loc>https://blog.jaychou.site/categories/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2023-11-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
