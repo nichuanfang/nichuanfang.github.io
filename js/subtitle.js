@@ -1,1 +1,1 @@
-var xhr=new XMLHttpRequest;xhr.open("GET","https://v2.jinrishici.com/one.json",true);xhr.onreadystatechange=function(){if(xhr.readyState===4&&xhr.status===200){var e=JSON.parse(xhr.responseText);console.log(e);console.log(e.data.content)}};xhr.send();
+fetch("https://v2.jinrishici.com/one.json",{method:"GET",mode:"cors"}).then(o=>o.json()).then(o=>{console.log(o);console.log(o.data.content)}).catch(o=>{console.error("Error:",o)});
