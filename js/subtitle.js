@@ -1,1 +1,1 @@
-fetch("https://v2.jinrishici.com/one.json",{method:"GET",mode:"cors"}).then(o=>o.json()).then(o=>{console.log(o);console.log(o.data.content)}).catch(o=>{console.error("Error:",o)});
+fetch("https://v2.jinrishici.com/sentence",{method:"GET",mode:"cors",headers:{"X-User-Token":"xNJL0fQDhPz3++IrWZte3QnBlkeSC+J/"}}).then(e=>e.json()).then(e=>{console.log(e);console.log(e.data.content)}).catch(e=>{console.error("Error:",e)});
