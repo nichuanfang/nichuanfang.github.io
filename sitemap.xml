@@ -122,6 +122,13 @@
   </url>
   
   <url>
+    <loc>https://blog.jaychou.site/tags/test/</loc>
+    <lastmod>2023-12-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.jaychou.site/tags/tools/</loc>
     <lastmod>2023-12-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -137,13 +144,6 @@
   
   <url>
     <loc>https://blog.jaychou.site/tags/youtube/</loc>
-    <lastmod>2023-12-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.jaychou.site/tags/test/</loc>
     <lastmod>2023-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -187,14 +187,14 @@
   </url>
   
   <url>
-    <loc>https://blog.jaychou.site/categories/%E5%B7%A5%E5%85%B7/</loc>
+    <loc>https://blog.jaychou.site/categories/%E5%85%B6%E4%BB%96/</loc>
     <lastmod>2023-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.jaychou.site/categories/%E5%85%B6%E4%BB%96/</loc>
+    <loc>https://blog.jaychou.site/categories/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2023-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
