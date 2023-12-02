@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.jaychou.site/2023/12/02/hello-world/</loc>
-    
-    <lastmod>2023-12-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.jaychou.site/2023/12/02/GithubActions%E5%AF%86%E9%92%A5%E5%92%8C%E5%8F%98%E9%87%8F%E7%BB%9F%E4%B8%80%E7%AE%A1%E7%90%86/</loc>
     
     <lastmod>2023-12-02</lastmod>
@@ -30,6 +21,15 @@
   
   <url>
     <loc>https://blog.jaychou.site/2023/12/02/go%E5%AD%A6%E4%B9%A0/</loc>
+    
+    <lastmod>2023-12-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.jaychou.site/2023/12/02/hello-world/</loc>
     
     <lastmod>2023-12-02</lastmod>
     
