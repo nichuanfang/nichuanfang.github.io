@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.jaychou.site/2023/12/02/music-tool-kit%E5%B7%A5%E5%85%B7/</loc>
+    
+    <lastmod>2023-12-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.jaychou.site/about/index.html</loc>
     
     <lastmod>2023-12-02</lastmod>
@@ -39,15 +48,6 @@
   
   <url>
     <loc>https://blog.jaychou.site/2023/12/02/hello-world/</loc>
-    
-    <lastmod>2023-12-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.jaychou.site/2023/12/02/music-tool-kit%E5%B7%A5%E5%85%B7/</loc>
     
     <lastmod>2023-12-02</lastmod>
     
