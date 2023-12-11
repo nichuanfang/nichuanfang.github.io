@@ -74,7 +74,7 @@
   </url>
   
   <url>
-    <loc>https://blog.jaychou.site/2023/12/02/%E4%B8%BB%E9%A2%98%E6%A8%A1%E6%9D%BF%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/</loc>
+    <loc>https://blog.jaychou.site/2023/12/02/windows%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</loc>
     
     <lastmod>2023-12-02</lastmod>
     
@@ -83,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://blog.jaychou.site/2023/12/02/windows%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</loc>
+    <loc>https://blog.jaychou.site/2023/12/02/%E4%B8%BB%E9%A2%98%E6%A8%A1%E6%9D%BF%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/</loc>
     
     <lastmod>2023-12-02</lastmod>
     
@@ -117,14 +117,14 @@
   </url>
   
   <url>
-    <loc>https://blog.jaychou.site/tags/hexo%E4%B8%BB%E9%A2%98/</loc>
+    <loc>https://blog.jaychou.site/tags/go/</loc>
     <lastmod>2023-12-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.jaychou.site/tags/go/</loc>
+    <loc>https://blog.jaychou.site/tags/hexo%E4%B8%BB%E9%A2%98/</loc>
     <lastmod>2023-12-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
