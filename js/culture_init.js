@@ -1,0 +1,1 @@
+if(!sessionStorage.getItem("init_data")){fetch("https://api.jaychou.site/trakt/movie").then(function(t){return t.json()}).then(function(t){sessionStorage.setItem("init_data",true)}).catch(function(t){console.error("Error:",t)})}
