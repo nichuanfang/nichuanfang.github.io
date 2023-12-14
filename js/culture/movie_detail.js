@@ -5,7 +5,7 @@ $(document).ready(function(){if(document.querySelector("#movie-detail-container"
                   <img
                             srcset="/img/loading.gif"
                             lazyload
-                            src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2${o.cover_image_url}"
+                            src="https://image.tmdb.org/t/p/w440_and_h660_face${o.cover_image_url}"
                             data-loaded="true"
                         />
             </div>
