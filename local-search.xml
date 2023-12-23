@@ -4,11 +4,11 @@
   
   
   <entry>
-    <title>fluid主题配置</title>
-    <link href="/2023/12/02/fluid%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/"/>
-    <url>/2023/12/02/fluid%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/</url>
+    <title>有关vercel部署的项目在一段时间空闲后会自动关闭的问题</title>
+    <link href="/2023/12/23/%E6%9C%89%E5%85%B3vercel%E9%83%A8%E7%BD%B2%E7%9A%84%E9%A1%B9%E7%9B%AE%E5%9C%A8%E4%B8%80%E6%AE%B5%E6%97%B6%E9%97%B4%E7%A9%BA%E9%97%B2%E5%90%8E%E4%BC%9A%E8%87%AA%E5%8A%A8%E5%85%B3%E9%97%AD%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <url>/2023/12/23/%E6%9C%89%E5%85%B3vercel%E9%83%A8%E7%BD%B2%E7%9A%84%E9%A1%B9%E7%9B%AE%E5%9C%A8%E4%B8%80%E6%AE%B5%E6%97%B6%E9%97%B4%E7%A9%BA%E9%97%B2%E5%90%8E%E4%BC%9A%E8%87%AA%E5%8A%A8%E5%85%B3%E9%97%AD%E7%9A%84%E9%97%AE%E9%A2%98/</url>
     
-    <content type="html"><![CDATA[<p>个人博客搭建心得 使用<code>hexo + fluid</code>主题</p><div class="note note-success">            <p>本文主要介绍了个人博客搭建的心得， 使用<code>hexo + fluid</code>主题，以及一些常用的插件 。</p>          </div><h2 id="1-Hexo"><a href="#1-Hexo" class="headerlink" title="1. Hexo"></a>1. Hexo</h2><h3 id="1-1-安装"><a href="#1-1-安装" class="headerlink" title="1.1. 安装"></a>1.1. 安装</h3><h4 id="1-1-1-Node-js"><a href="#1-1-1-Node-js" class="headerlink" title="1.1.1. Node.js"></a>1.1.1. Node.js</h4><p><a href="https://nodejs.org/en/">Node.js 官网</a>下载最新版本的 Node.js，目前最新版本为 14.15.4。</p><h4 id="1-1-2-Hexo"><a href="#1-1-2-Hexo" class="headerlink" title="1.1.2. Hexo"></a>1.1.2. Hexo</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 安装</span><br>npm install -g hexo-cli<br><span class="hljs-comment"># 查看版本</span><br>hexo -v<br></code></pre></td></tr></table></figure><h3 id="1-2-初始化"><a href="#1-2-初始化" class="headerlink" title="1.2. 初始化"></a>1.2. 初始化</h3><h4 id="1-2-1-初始化"><a href="#1-2-1-初始化" class="headerlink" title="1.2.1. 初始化"></a>1.2.1. 初始化</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 初始化</span><br>hexo init blog<br><span class="hljs-comment"># 进入目录</span><br><span class="hljs-built_in">cd</span> blog<br><span class="hljs-comment"># 安装依赖</span><br>npm install<br></code></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h1 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h1><p>通过vercel部署了Go的Serverless Functions，其中init函数中包含较长时间的初始化过程，每当一段时间不访问服务后的第一次访问总会很慢，猜测vercel是会将一段时间没人使用的服务关闭，等待该服务再次被请求时重新开启。</p><h1 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h1><p>如下的程序使用vercel部署后可以证明，当短时间连续请求多次时，接口返回的是 “11”-&gt;“111”-&gt;“1111”，但一段时间没有请求时再请求，接口返回值会变回”11”。</p>    <div class="fold">      <div class="fold-title fold-info collapsed" data-toggle="collapse" href="#collapse-8f7bdefe" role="button" aria-expanded="false" aria-controls="collapse-8f7bdefe">        <div class="fold-arrow">▶</div>title      </div>      <div class='fold-content collapse' id="collapse-8f7bdefe">        <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-keyword">import</span> (<br>    <span class="hljs-string">&quot;fmt&quot;</span><br>    <span class="hljs-string">&quot;net/http&quot;</span><br>)<br><br><span class="hljs-keyword">var</span> count = <span class="hljs-string">&quot;1&quot;</span><br><br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">Handler</span><span class="hljs-params">(w http.ResponseWriter, r *http.Request)</span></span> &#123;<br>    count += <span class="hljs-string">&quot;1&quot;</span><br>    fmt.Fprintf(w, count)<br>&#125;<br></code></pre></td></tr></table></figure>      </div>    </div><h1 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h1><div class="note note-success">            <p>云函数对比传统开发模式而言多了一个”装载”的过程，即请求到达时，云函数先被装载到一个临时环境中，并在该环境中运行，为提高资源利用率，该云函数会继续占用该临时环境一段时间，以因对随后可能的连续请求（类似缓存原理），尽管此时云函数因为占有内存而在内部拥有保存运行状态的能力，但随着云函数空闲，云函数被移除该临时环境，对应的内存也会被清除回收，原先程序的运行数据将被不被保存，因此在编写云函数时应该保证该函数是无状态的，即每次请求之间应该不相互依赖，否则云函数将无法保证运行的结果能够符合预期。</p>          </div>]]></content>
     
     
     <categories>
@@ -20,7 +20,7 @@
     
     <tags>
       
-      <tag>hexo主题</tag>
+      <tag>vercel</tag>
       
     </tags>
     
@@ -46,6 +46,31 @@
     <tags>
       
       <tag>GithubActions</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>fluid主题配置</title>
+    <link href="/2023/12/02/fluid%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/"/>
+    <url>/2023/12/02/fluid%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/</url>
+    
+    <content type="html"><![CDATA[<p>个人博客搭建心得 使用<code>hexo + fluid</code>主题</p><div class="note note-success">            <p>本文主要介绍了个人博客搭建的心得， 使用<code>hexo + fluid</code>主题，以及一些常用的插件 。</p>          </div><h2 id="1-Hexo"><a href="#1-Hexo" class="headerlink" title="1. Hexo"></a>1. Hexo</h2><h3 id="1-1-安装"><a href="#1-1-安装" class="headerlink" title="1.1. 安装"></a>1.1. 安装</h3><h4 id="1-1-1-Node-js"><a href="#1-1-1-Node-js" class="headerlink" title="1.1.1. Node.js"></a>1.1.1. Node.js</h4><p><a href="https://nodejs.org/en/">Node.js 官网</a>下载最新版本的 Node.js，目前最新版本为 14.15.4。</p><h4 id="1-1-2-Hexo"><a href="#1-1-2-Hexo" class="headerlink" title="1.1.2. Hexo"></a>1.1.2. Hexo</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 安装</span><br>npm install -g hexo-cli<br><span class="hljs-comment"># 查看版本</span><br>hexo -v<br></code></pre></td></tr></table></figure><h3 id="1-2-初始化"><a href="#1-2-初始化" class="headerlink" title="1.2. 初始化"></a>1.2. 初始化</h3><h4 id="1-2-1-初始化"><a href="#1-2-1-初始化" class="headerlink" title="1.2.1. 初始化"></a>1.2.1. 初始化</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 初始化</span><br>hexo init blog<br><span class="hljs-comment"># 进入目录</span><br><span class="hljs-built_in">cd</span> blog<br><span class="hljs-comment"># 安装依赖</span><br>npm install<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>应用</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>hexo主题</tag>
       
     </tags>
     
