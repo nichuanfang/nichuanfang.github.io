@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.jaychou.site/about/index.html</loc>
-    
-    <lastmod>2023-12-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.jaychou.site/culture/index.html</loc>
     
     <lastmod>2023-12-23</lastmod>
@@ -20,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://blog.jaychou.site/culture/documentaries/index.html</loc>
+    <loc>https://blog.jaychou.site/culture/books/index.html</loc>
     
     <lastmod>2023-12-23</lastmod>
     
@@ -29,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://blog.jaychou.site/culture/books/index.html</loc>
+    <loc>https://blog.jaychou.site/culture/documentaries/index.html</loc>
     
     <lastmod>2023-12-23</lastmod>
     
@@ -83,6 +74,15 @@
   </url>
   
   <url>
+    <loc>https://blog.jaychou.site/about/index.html</loc>
+    
+    <lastmod>2023-12-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.jaychou.site/2023/12/02/go%E5%AD%A6%E4%B9%A0/</loc>
     
     <lastmod>2023-12-21</lastmod>
@@ -119,7 +119,7 @@
   </url>
   
   <url>
-    <loc>https://blog.jaychou.site/2023/12/02/GithubActions%E5%AF%86%E9%92%A5%E5%92%8C%E5%8F%98%E9%87%8F%E7%BB%9F%E4%B8%80%E7%AE%A1%E7%90%86/</loc>
+    <loc>https://blog.jaychou.site/2023/12/02/fluid%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/</loc>
     
     <lastmod>2023-12-02</lastmod>
     
@@ -128,7 +128,7 @@
   </url>
   
   <url>
-    <loc>https://blog.jaychou.site/2023/12/02/fluid%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/</loc>
+    <loc>https://blog.jaychou.site/2023/12/02/GithubActions%E5%AF%86%E9%92%A5%E5%92%8C%E5%8F%98%E9%87%8F%E7%BB%9F%E4%B8%80%E7%AE%A1%E7%90%86/</loc>
     
     <lastmod>2023-12-02</lastmod>
     
@@ -173,13 +173,6 @@
 
   
   <url>
-    <loc>https://blog.jaychou.site/tags/GithubActions/</loc>
-    <lastmod>2023-12-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.jaychou.site/tags/hexo%E4%B8%BB%E9%A2%98/</loc>
     <lastmod>2023-12-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -187,7 +180,7 @@
   </url>
   
   <url>
-    <loc>https://blog.jaychou.site/tags/go/</loc>
+    <loc>https://blog.jaychou.site/tags/GithubActions/</loc>
     <lastmod>2023-12-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -195,6 +188,13 @@
   
   <url>
     <loc>https://blog.jaychou.site/tags/test/</loc>
+    <lastmod>2023-12-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.jaychou.site/tags/go/</loc>
     <lastmod>2023-12-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -222,14 +222,14 @@
   </url>
   
   <url>
-    <loc>https://blog.jaychou.site/tags/windows/</loc>
+    <loc>https://blog.jaychou.site/tags/python/</loc>
     <lastmod>2023-12-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.jaychou.site/tags/python/</loc>
+    <loc>https://blog.jaychou.site/tags/windows/</loc>
     <lastmod>2023-12-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -245,14 +245,14 @@
 
   
   <url>
-    <loc>https://blog.jaychou.site/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <loc>https://blog.jaychou.site/categories/%E5%BA%94%E7%94%A8/</loc>
     <lastmod>2023-12-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.jaychou.site/categories/%E5%BA%94%E7%94%A8/</loc>
+    <loc>https://blog.jaychou.site/categories/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2023-12-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
