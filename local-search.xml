@@ -79,31 +79,6 @@
   
   
   <entry>
-    <title>hello-world</title>
-    <link href="/2023/12/02/hello-world/"/>
-    <url>/2023/12/02/hello-world/</url>
-    
-    <content type="html"><![CDATA[<blockquote><p>REALITY 使用其它端口貌似也具有相同伪装性（不打保证），对于自己服务器上已经有站点的，也不用为了共存另外设置反向代理或分流之类的，直接使用其它端口就可以了。</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs bash"><br>```routeros<br>[信息] 已重启 xray 服务<br>-------------- client config --------------<br>address     : <span class="hljs-string">&quot;45.32.50.85&quot;</span><br>port        : 8443<br>protocol    : <span class="hljs-string">&quot;vless&quot;</span><br><span class="hljs-built_in">id</span>          : <span class="hljs-string">&quot;422939fd-f699-4a26-a6d7-61e17ee3dd88&quot;</span><br>flow        : <span class="hljs-string">&quot;xtls-rprx-vision&quot;</span><br>network     : <span class="hljs-string">&quot;tcp&quot;</span><br>TLS         : <span class="hljs-string">&quot;reality&quot;</span><br>SNI         : <span class="hljs-string">&quot;lovelive-anime.jp&quot;</span>,<span class="hljs-string">&quot;www.lovelive-anime.jp&quot;</span><br>Fingerprint : <span class="hljs-string">&quot;chrome&quot;</span><br>PublicKey   : <span class="hljs-string">&quot;LRrsQXaa2O2LWICHuZ9rY3vq9mC7m2iHxjLEikS3xBA&quot;</span><br>ShortId     : <span class="hljs-string">&quot;&quot;</span>,<span class="hljs-string">&quot;6d&quot;</span>,<span class="hljs-string">&quot;85dd&quot;</span>,<span class="hljs-string">&quot;e04cccd5&quot;</span>,<span class="hljs-string">&quot;5042dcec226b1621&quot;</span><br>SpiderX     : <span class="hljs-string">&quot;/&quot;</span><br>------------------------------------------<br>是否生成分享链接[y/n]:<br></code></pre></td></tr></table></figure><!-- 块引用 --><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css">iptables -<span class="hljs-selector-tag">I</span> <span class="hljs-selector-tag">INPUT</span> -<span class="hljs-selector-tag">p</span> tcp <span class="hljs-attr">--dport</span> <span class="hljs-number">443</span> -j ACCEPT<br></code></pre></td></tr></table></figure><p>以后要进入这个管理脚本界面输入 <code>bash Xray-script.sh</code> 这个<strong>命令</strong>就可以进入了，<em>现在</em>别管<strong>dsd</strong>。</p><div class="note note-success">            <p>这是一段 success 效果测试代码</p>          </div><div class="note note-info">            <p>这是一段 info 效果测试代码</p>          </div><div class="note note-warning">            <p>这是一段 warning 效果测试代码</p>          </div><div class="note note-danger">            <p>这是一段 danger 效果测试代码</p>          </div><div class="note note-primary">            <p>这是一段 primary 效果测试代码</p>          </div><p><img src="https://i0.wp.com/www.additudemag.com/wp-content/uploads/2016/11/78_8_Diagnose_Kids_Autism-Misdiagnosis_Slideshow_78_girl-father-playroom_ts_83480810.jpg"></p><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New    Post   &quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-    <categories>
-      
-      <category>其他</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>test</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>go学习</title>
     <link href="/2023/12/02/go%E5%AD%A6%E4%B9%A0/"/>
     <url>/2023/12/02/go%E5%AD%A6%E4%B9%A0/</url>
@@ -121,6 +96,31 @@
     <tags>
       
       <tag>go</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>hello-world</title>
+    <link href="/2023/12/02/hello-world/"/>
+    <url>/2023/12/02/hello-world/</url>
+    
+    <content type="html"><![CDATA[<blockquote><p>REALITY 使用其它端口貌似也具有相同伪装性（不打保证），对于自己服务器上已经有站点的，也不用为了共存另外设置反向代理或分流之类的，直接使用其它端口就可以了。</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs bash"><br>```routeros<br>[信息] 已重启 xray 服务<br>-------------- client config --------------<br>address     : <span class="hljs-string">&quot;45.32.50.85&quot;</span><br>port        : 8443<br>protocol    : <span class="hljs-string">&quot;vless&quot;</span><br><span class="hljs-built_in">id</span>          : <span class="hljs-string">&quot;422939fd-f699-4a26-a6d7-61e17ee3dd88&quot;</span><br>flow        : <span class="hljs-string">&quot;xtls-rprx-vision&quot;</span><br>network     : <span class="hljs-string">&quot;tcp&quot;</span><br>TLS         : <span class="hljs-string">&quot;reality&quot;</span><br>SNI         : <span class="hljs-string">&quot;lovelive-anime.jp&quot;</span>,<span class="hljs-string">&quot;www.lovelive-anime.jp&quot;</span><br>Fingerprint : <span class="hljs-string">&quot;chrome&quot;</span><br>PublicKey   : <span class="hljs-string">&quot;LRrsQXaa2O2LWICHuZ9rY3vq9mC7m2iHxjLEikS3xBA&quot;</span><br>ShortId     : <span class="hljs-string">&quot;&quot;</span>,<span class="hljs-string">&quot;6d&quot;</span>,<span class="hljs-string">&quot;85dd&quot;</span>,<span class="hljs-string">&quot;e04cccd5&quot;</span>,<span class="hljs-string">&quot;5042dcec226b1621&quot;</span><br>SpiderX     : <span class="hljs-string">&quot;/&quot;</span><br>------------------------------------------<br>是否生成分享链接[y/n]:<br></code></pre></td></tr></table></figure><!-- 块引用 --><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css">iptables -<span class="hljs-selector-tag">I</span> <span class="hljs-selector-tag">INPUT</span> -<span class="hljs-selector-tag">p</span> tcp <span class="hljs-attr">--dport</span> <span class="hljs-number">443</span> -j ACCEPT<br></code></pre></td></tr></table></figure><p>以后要进入这个管理脚本界面输入 <code>bash Xray-script.sh</code> 这个<strong>命令</strong>就可以进入了，<em>现在</em>别管<strong>dsd</strong>。</p><div class="note note-success">            <p>这是一段 success 效果测试代码</p>          </div><div class="note note-info">            <p>这是一段 info 效果测试代码</p>          </div><div class="note note-warning">            <p>这是一段 warning 效果测试代码</p>          </div><div class="note note-danger">            <p>这是一段 danger 效果测试代码</p>          </div><div class="note note-primary">            <p>这是一段 primary 效果测试代码</p>          </div><p><img src="https://i0.wp.com/www.additudemag.com/wp-content/uploads/2016/11/78_8_Diagnose_Kids_Autism-Misdiagnosis_Slideshow_78_girl-father-playroom_ts_83480810.jpg"></p><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New    Post   &quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>其他</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>test</tag>
       
     </tags>
     
