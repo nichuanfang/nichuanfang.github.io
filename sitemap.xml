@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://blog.jaychou.site/culture/documentaries/index.html</loc>
+    <loc>https://blog.jaychou.site/culture/movies/index.html</loc>
     
     <lastmod>2024-09-12</lastmod>
     
@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://blog.jaychou.site/culture/movies/index.html</loc>
+    <loc>https://blog.jaychou.site/culture/documentaries/index.html</loc>
     
     <lastmod>2024-09-12</lastmod>
     
@@ -272,6 +272,13 @@
   </url>
   
   <url>
+    <loc>https://blog.jaychou.site/tags/%E8%AE%BE%E8%AE%A1/</loc>
+    <lastmod>2024-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.jaychou.site/tags/vercel/</loc>
     <lastmod>2024-09-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -287,13 +294,6 @@
   
   <url>
     <loc>https://blog.jaychou.site/tags/%E9%80%86%E5%90%91/</loc>
-    <lastmod>2024-09-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.jaychou.site/tags/%E8%AE%BE%E8%AE%A1/</loc>
     <lastmod>2024-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
