@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.chuanfang.org/about/</loc>
+    
+    <lastmod>2024-11-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.chuanfang.org/culture/</loc>
     
     <lastmod>2024-11-19</lastmod>
@@ -29,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://blog.chuanfang.org/culture/movies/</loc>
+    <loc>https://blog.chuanfang.org/culture/music/</loc>
     
     <lastmod>2024-11-19</lastmod>
     
@@ -38,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://blog.chuanfang.org/culture/music/</loc>
+    <loc>https://blog.chuanfang.org/culture/movies/</loc>
     
     <lastmod>2024-11-19</lastmod>
     
@@ -65,15 +74,6 @@
   </url>
   
   <url>
-    <loc>https://blog.chuanfang.org/culture/movies/detail/</loc>
-    
-    <lastmod>2024-11-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.chuanfang.org/culture/shows/detail/</loc>
     
     <lastmod>2024-11-19</lastmod>
@@ -83,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://blog.chuanfang.org/about/</loc>
+    <loc>https://blog.chuanfang.org/culture/movies/detail/</loc>
     
     <lastmod>2024-11-19</lastmod>
     
@@ -137,7 +137,7 @@
   </url>
   
   <url>
-    <loc>https://blog.chuanfang.org/2023/12/02/hello-world/</loc>
+    <loc>https://blog.chuanfang.org/2023/12/02/go%E5%AD%A6%E4%B9%A0/</loc>
     
     <lastmod>2023-12-27</lastmod>
     
@@ -146,7 +146,7 @@
   </url>
   
   <url>
-    <loc>https://blog.chuanfang.org/2023/12/02/go%E5%AD%A6%E4%B9%A0/</loc>
+    <loc>https://blog.chuanfang.org/2023/12/02/hello-world/</loc>
     
     <lastmod>2023-12-27</lastmod>
     
@@ -223,14 +223,14 @@
   </url>
   
   <url>
-    <loc>https://blog.chuanfang.org/tags/test/</loc>
+    <loc>https://blog.chuanfang.org/tags/go/</loc>
     <lastmod>2024-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.chuanfang.org/tags/go/</loc>
+    <loc>https://blog.chuanfang.org/tags/test/</loc>
     <lastmod>2024-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
