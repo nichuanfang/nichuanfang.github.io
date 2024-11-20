@@ -29,15 +29,6 @@
   </url>
   
   <url>
-    <loc>https://blog.chuanfang.org/culture/movies/</loc>
-    
-    <lastmod>2024-11-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.chuanfang.org/culture/documentaries/</loc>
     
     <lastmod>2024-11-20</lastmod>
@@ -56,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://blog.chuanfang.org/culture/variety-show/</loc>
+    <loc>https://blog.chuanfang.org/culture/movies/</loc>
     
     <lastmod>2024-11-20</lastmod>
     
@@ -66,6 +57,15 @@
   
   <url>
     <loc>https://blog.chuanfang.org/culture/shows/</loc>
+    
+    <lastmod>2024-11-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.chuanfang.org/culture/variety-show/</loc>
     
     <lastmod>2024-11-20</lastmod>
     
