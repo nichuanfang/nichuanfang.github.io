@@ -2,51 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.chuanfang.org/culture/</loc>
-    
-    <lastmod>2024-11-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.chuanfang.org/culture/documentaries/</loc>
-    
-    <lastmod>2024-11-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.chuanfang.org/culture/movies/</loc>
-    
-    <lastmod>2024-11-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.chuanfang.org/culture/music/</loc>
-    
-    <lastmod>2024-11-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.chuanfang.org/culture/variety-show/</loc>
-    
-    <lastmod>2024-11-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.chuanfang.org/culture/shows/</loc>
     
     <lastmod>2024-11-21</lastmod>
@@ -56,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://blog.chuanfang.org/culture/movies/detail/</loc>
+    <loc>https://blog.chuanfang.org/culture/variety-show/</loc>
     
     <lastmod>2024-11-21</lastmod>
     
@@ -83,7 +38,52 @@
   </url>
   
   <url>
+    <loc>https://blog.chuanfang.org/culture/</loc>
+    
+    <lastmod>2024-11-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.chuanfang.org/culture/books/</loc>
+    
+    <lastmod>2024-11-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.chuanfang.org/culture/movies/</loc>
+    
+    <lastmod>2024-11-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.chuanfang.org/culture/music/</loc>
+    
+    <lastmod>2024-11-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.chuanfang.org/culture/documentaries/</loc>
+    
+    <lastmod>2024-11-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.chuanfang.org/culture/movies/detail/</loc>
     
     <lastmod>2024-11-21</lastmod>
     
